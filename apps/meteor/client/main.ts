@@ -4,7 +4,6 @@ import './startup/desktopInjection';
 
 import('@rocket.chat/fuselage-polyfills')
 	.then(() => import('./meteor/overrides'))
-	.then(() => import('./ecdh'))
 	.then(() => import('./importPackages'))
 	.then(() => import('./startup'))
 	.then(() => import('./omnichannel'))
